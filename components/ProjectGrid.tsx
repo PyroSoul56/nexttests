@@ -34,7 +34,7 @@ function ProjectGrid() {
                     >
                         <div key={id} className='lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center w-full'>
                             <PinContainer title='See more' href={projectInfo}>
-                                <div className='relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10'>
+                                <div className='relative flex items-center justify-center w-[500px] overflow-hidden h-[20vh] lg:h-[30vh] mb-10'>
                                     <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-primary' />
                                     
                                     <Image src={img} alt={title} layout='fill' objectFit='cover' className='absoulte bottom-0'/>
