@@ -12,7 +12,7 @@ const ScrambleText: React.FC<ScrambleTextProps> = ({ text, duration = 2000 }) =>
   useEffect(() => {
     let timeoutId: NodeJS.Timeout;
     let currentIteration = 0;
-    const totalIterations = 20; // Número de ciclos para cambiar los caracteres aleatorios
+    const totalIterations = 80; // Número de ciclos para cambiar los caracteres aleatorios
     
     const scramble = () => {
       const scrambleText = text.split("").map((char, index) => {
@@ -41,4 +41,3 @@ const ScrambleText: React.FC<ScrambleTextProps> = ({ text, duration = 2000 }) =>
 };
 
 export default ScrambleText;
-    

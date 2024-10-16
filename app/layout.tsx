@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import { JetBrains_Mono } from "next/font/google";
 
@@ -33,9 +32,9 @@ export default function RootLayout({
       <body className={`${jetbrainsMono.variable} antialiased`}>
         <Header />
         <StairTransition />
-        <PageTransition>
+      <PageTransition>
           {children}
-        </PageTransition>
+      </PageTransition>
       </body>
     </html>
   );
