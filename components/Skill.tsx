@@ -3,12 +3,11 @@ import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 
 type Props = {
-    directionLeft?: boolean;
     image: StaticImageData;
     percentage: number;
 };
 
-function Skill({ directionLeft, image, percentage }: Props) {
+function Skill({image, percentage }: Props) {
   return <div className='group relative flex cursor-pointer'>
     <div
         

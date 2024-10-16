@@ -27,6 +27,7 @@ function ProjectGrid() {
             {
                 projects.map(({id, title, img, description, iconList, projectInfo}, index) => (
                     <motion.div 
+                    key={id}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 2, delay: (1.5 + index*0.5) }}
