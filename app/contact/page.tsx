@@ -6,13 +6,7 @@ import Socials from "@/components/Socials";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-    title: 'Contact me',
-    description:
-      'Tomas\'s portfolio',
-  };
 
 const Contact = () => {
     return (

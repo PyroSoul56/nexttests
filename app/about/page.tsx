@@ -4,13 +4,6 @@ import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import React from "react";
 import { motion } from "framer-motion";
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: 'About me',
-  description:
-    'Tomas\'s portfolio',
-};
 
 const About = () => {
   return (

@@ -3,13 +3,7 @@
 import React from "react";
 import HomeImage from "@/components/HomeImage";
 import HomeIntro from "@/components/HomeIntro";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: 'Portfolio',
-  description:
-    'Tomas\'s portfolio',
-};
 
 export default function Home() {
   return (
