@@ -1,6 +1,5 @@
 "use client";
 import React from 'react'
-import { socials } from '@/lib/data';
 import { Link } from 'lucide-react';
 
 

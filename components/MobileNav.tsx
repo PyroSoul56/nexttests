@@ -1,11 +1,9 @@
 "use client";
 
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "./ui/sheet";
-import { DialogTitle } from "@radix-ui/react-dialog";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
-import { IoMdClose } from "react-icons/io";
 import ScrambleText from "./ui/ScrambleText";
 
 const links = [

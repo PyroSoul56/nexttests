@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion'
-import { Percent } from 'lucide-react'
+
 import React from 'react'
 import Image, { StaticImageData } from 'next/image'
 

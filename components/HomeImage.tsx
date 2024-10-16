@@ -5,9 +5,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import profile from '../images/profile.jpg'
 
-type Props = {}
-
-const HomeImage = (props: Props) => {
+const HomeImage = () => {
   return (
     <div className='w-full h-full relative'>
         <motion.div

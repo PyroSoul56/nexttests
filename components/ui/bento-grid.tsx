@@ -1,6 +1,4 @@
 import { cn } from "@/lib/utils";
-import { Link } from "lucide-react";
-import { socials } from "@/lib/data";
 import ProjectInfo from "../project-info";
 
 export const BentoGrid = ({

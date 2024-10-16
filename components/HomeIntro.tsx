@@ -4,9 +4,7 @@ import React from 'react'
 import Socials from './Socials'
 import ScrambleText from './ui/ScrambleText'
 
-type Props = {}
-
-const HomeIntro = (props: Props) => {
+const HomeIntro = () => {
   return (
     <div className='text-center xl:text-left'>
         

@@ -1,5 +1,4 @@
-import {animate, motion, MotionConfig} from 'framer-motion'
-import { existsSync } from 'fs'
+import {motion} from 'framer-motion'
 
 const stairAnimation = {
   initial: {

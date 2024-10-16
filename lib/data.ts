@@ -11,7 +11,6 @@ import { LuGraduationCap } from "react-icons/lu"
 import React from "react"
 
 import { FaGithub } from "react-icons/fa"
-import { imageConfigDefault } from "next/dist/shared/lib/image-config"
 
 
 

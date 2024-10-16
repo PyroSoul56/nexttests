@@ -1,13 +1,8 @@
 
 
 import React from "react";
-import Profile from "../images/github-icon.png"
-import Image from "next/image";
-import { FaArrowRight } from "react-icons/fa";
-import Link from "next/link";
 import HomeImage from "@/components/HomeImage";
 import HomeIntro from "@/components/HomeIntro";
-import Socials from "@/components/Socials";
 
 
 export default function Home() {
