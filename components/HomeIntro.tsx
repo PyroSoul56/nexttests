@@ -1,5 +1,8 @@
+"use client";
+
 import React from 'react'
 import Socials from './Socials'
+import ScrambleText from './ui/ScrambleText'
 
 type Props = {}
 
@@ -9,7 +12,7 @@ const HomeIntro = (props: Props) => {
         
         <div className='text-[48px] xl:text-[64px]'>
             <p className='h-[70px]'>I'm</p>
-            <p className=' text-accent '>Tomás Quevedo</p>
+            <p className=' text-accent '><ScrambleText duration={2200} text='Tomás Quevedo'/></p>
         </div>
         <h3 className='text-[20px]'>
             <p className='max-w-[600px] mb-4'>

@@ -19,7 +19,7 @@ const Header = () => {
         <div className="container mx-auto flex justify-between items-center">
             <Link href='/'>
                 <h1 className='text-4xl font-semibold'>
-                    <span className='text-accent'>&#123;</span><ScrambleText text='Tomás' duration={2000}/><span className='text-accent'>&#125;</span>
+                    <span className='text-accent'>&#123;</span>Tomás<span className='text-accent'>&#125;</span>
                 </h1>
             </Link>
 

@@ -109,11 +109,22 @@ useAnimationFrame((time) => {
 
   const x = useTransform(
     progress,
-    (val) => pathRef.current?.getPointAtLength(val).x
+    (val) => {
+      if (pathRef.current && pathRef.current.getTotalLength() > 0) {
+        return pathRef.current.getPointAtLength(val).x;
+      }
+      return 0; // Default value if path is invalid
+    }
   );
+  
   const y = useTransform(
     progress,
-    (val) => pathRef.current?.getPointAtLength(val).y
+    (val) => {
+      if (pathRef.current && pathRef.current.getTotalLength() > 0) {
+        return pathRef.current.getPointAtLength(val).y;
+      }
+      return 0; // Default value if path is invalid
+    }
   );
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
 

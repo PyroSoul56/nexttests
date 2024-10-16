@@ -6,6 +6,7 @@ import postgresIcon from "../images/postgres-icon.png"
 import nestIcon from "../images/nest-icon.png"
 import mongodbIcon from "../images/mongodb-icon.png"
 import quickSurvival from "../images/quick-survival.png"
+import cat from "../images/profile-placeholder.jpg"
 import { LuGraduationCap } from "react-icons/lu"
 import React from "react"
 
@@ -75,16 +76,14 @@ export const projects = [
         description: 'A minecraft plugin that unifies most of the survival quality of life plugins in one, with a special GUI to config all of them with much less commands and no config file editing needed.',
         img: quickSurvival,
         iconList: [javaIcon],
-        projectLink: 'https://github.com/Gersh0/QuickSurvival',
         projectInfo: '/projects/quicksurvival'
     },
     {
         id: 2,
         title: 'Typescript Compiler',
-        description: 'A typescript compiler with .',
-        img: '',
+        description: 'A typescript interpreter and compiler capable of storing and declaring variables, creating functions, and recursion',
+        img: cat,
         iconList: [typescriptIcon],
-        projectLink: '',
-        projectInfo: ''
-    }
+        projectInfo: '/projects/typescriptcompiler'
+    },
 ] as const;

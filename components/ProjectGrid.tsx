@@ -5,7 +5,6 @@ import { projects } from '@/lib/data'
 import { PinContainer } from './ui/3d-pin'
 import Image from 'next/image';
 import {motion} from 'framer-motion'
-import GithubLink from './ui/github-link';
 
 
 function ProjectGrid() {
@@ -23,16 +22,16 @@ function ProjectGrid() {
   return (
     <section>
         
-        <div className='flex flex-wrap items-center justify-center gap-6'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
 
             {
-                projects.map(({id, title, img, description, iconList, projectInfo, projectLink}, index) => (
+                projects.map(({id, title, img, description, iconList, projectInfo}, index) => (
                     <motion.div 
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 2, delay: (1.5 + index*0.5) }}
                     >
-                        <div key={id} className='lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-92 w-[80vw]'>
+                        <div key={id} className='lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center w-full'>
                             <PinContainer title='See more' href={projectInfo}>
                                 <div className='relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10'>
                                     <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-primary' />
@@ -55,9 +54,6 @@ function ProjectGrid() {
                                                 <Image src={icon} alt='' className='p-2 ' />
                                             </div>
                                         ))}
-                                    </div>
-                                    <div>
-                                        <GithubLink link={projectLink} />
                                     </div>
                                 </div>
 
